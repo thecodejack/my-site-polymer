@@ -1,0 +1,26 @@
+{
+  "name": "site_poly",
+  "version": "0.0.0",
+  "description": "My Personal site polymer version",
+  "keywords": [
+    "adi",
+    "srikanth",
+    "adi",
+    "srikanth"
+  ],
+  "authors": [
+    "adi srikanth"
+  ],
+  "license": "MIT",
+  "homepage": "adisrikanth.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.3"
+  }
+}

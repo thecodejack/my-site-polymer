@@ -1,0 +1,34 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="my-head" attributes="name design link" class="mycontent nav row" noscript>
+  <template>
+        <style>
+            :host {
+                display:block;
+                height: 10%;
+                line-height: 50px;
+                border-bottom: 1px solid #615454;
+                font-family:'Days One', sans-serif;
+            	padding-top: 1%;
+            }
+            .head_left {
+                color: #fff;
+                font-weight: bold;
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            a:hover {
+                
+            } 
+        </style>
+        <div class="col-md-7 head_left">
+            <span style="font-size: 28px;"><a href="{{link}}">{{name}}</a></span>
+            <span style="color: #FF8C8C;font-size: 18px;">{{design}}</span>
+        </div>
+        <div class="col-md-5 head_right">
+            
+        </div>
+  </template>
+</polymer-element>

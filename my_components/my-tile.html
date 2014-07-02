@@ -1,0 +1,93 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="my-tile" attributes="name imageUrl" class="col-md-4" noscript>
+  <template>
+        <style>
+            :host {
+                display:block;
+                height: 100%;
+                padding: 0 !important;
+                font-family: monospace;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            :host(:active) .cover, :host(:focus) .cover, :host(:hover) .cover, :host(.click) .cover {
+                -webkit-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                transform: rotateY(-180deg)
+            }
+            .cover {
+                -webkit-transition: .6s;
+                transition: .6s;
+                -webkit-transform-style: preserve-3d;
+                -ms-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            .down, .up {
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                font-size: 16px;
+                display: block
+            }
+            .up {
+                z-index: 2;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-color: #32313E;
+            }
+            .down {
+                -webkit-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+                background: #1D1A21;
+                color: #FFF;
+                padding: 0 10px;
+                padding-top: 40%;
+                text-align: justify;
+            }
+            .tile_lbl {
+                font-family:'Days One', sans-serif;
+                color: #fff;
+                position: absolute;
+                text-align: center;
+                font-size: 25px;
+                background-color: #1D1A21;
+                width: 100%;
+                top: 80%;
+                z-index: 3;
+                transition: all 0.6s ease;
+            }
+            
+            :host(:active) .tile_lbl, :host(:focus) .tile_lbl, :host(:hover) .tile_lbl, :host(.click) .tile_lbl {
+                top: 10%;
+                background-color: #FF8C8C;
+                color: #32313E;
+            }
+
+        </style>
+        <div class="tile_lbl">
+                {{name}}
+            </div>
+            <div class="cover">
+
+                <!-- ABOUT ME AND BLOG-->
+                <div class="up" style="background-image: url({{imageUrl}})">
+
+                </div>
+                <div class="down">
+                    <content></content>
+                </div>
+            </div>
+  </template>
+</polymer-element>
