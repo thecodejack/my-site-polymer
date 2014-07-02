@@ -1,0 +1,74 @@
+@font-face {
+    font-family:"CourierCode Bold";
+    src: url("fonts/CourierCode-Bold.ttf") format("truetype");
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-color: #32313E; /*#34343F;*/
+    overflow: hidden;
+    background-image: url('../images/p-logo.svg');
+    background-repeat: no-repeat;
+    background-size: 5% 5%;
+    background-position: 99% 5%;
+}
+.container {
+    height: 100%;
+}
+
+.wrapper {
+    height: 87%;
+}
+
+.myrow {
+    display: inline-block;
+    width: 100%;
+    -webkit-perspective: 3000px;
+    -ms-perspective: 3000px;
+    perspective: 3000px;
+}
+a {
+	color:#FF8C8C;
+}
+
+.repos {
+	text-align: left;
+}
+
+.social_icons .fa {
+    color: #FF8C8C;
+}
+
+.social_icons {
+    display: block;
+    padding: 0;
+}
+.social_icons li {
+    display: inline-block;
+}
+
+.social_icons li a {
+    text-decoration: none;
+}
+
+.no-csstransforms3d .myrow > div {
+    display:none !important;
+}
+
+.comp_msg {
+    position: absolute;
+    color: red;
+    display: none;
+    top: 12%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.no-csstransforms3d .comp_msg {
+    display: block;
+}
+
+.no-cssreflections .comp_msg {
+    display:block;
+}

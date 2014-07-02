@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adi Srikanth | Polymer Version of my site</title>
+    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/modernizer.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/hint.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- 1. Load platform support before any code that touches the DOM. -->
+    <script src="bower_components/platform/platform.js"></script>
+    <!-- 2. Load the component using an HTML Import -->
+    <link rel="import" href="my_components/my-head.html">
+    <link rel="import" href="my_components/my-tile.html">
+  </head>
+  <body class="container">
+    <!-- 3. Declare the element by its tag. -->
+    <my-head name="SRIKANTH ADI" design="FRONT END DEVELOPER" link="http://adisrikanth.com"></my-head>
+    <div class="mycontent myrow wrapper">
+        <my-tile name="About Me" imageUrl="images/a.png">
+            Hi There. I am a front end developer currently working on web technologies from Hyderabad, India. 
+                    I love coding stuff and was part of various projects since college days. Apart that i follow football very closely. 
+					My allegencies in football lies with one of the best clubs in the world Manchester United. 
+        </my-tile>
+        <my-tile name="WORK" imageUrl="images/d1.png">
+           <p>Following are few open source contributions worked with the help of my friend Octocat.</p>
+                <ul class="repos">
+					<li>
+						<a href="">JqueryUI views for EmberJS</a>
+					</li>
+					<li>
+						<a href="https://github.com/thecodejack/2048">2048 with CheatMode</a>
+					</li>
+					<li>
+						<a href="https://github.com/thecodejack/2048-EPL">2048 EPL</a>
+					</li>
+					<li>
+						<a href="https://github.com/thecodejack/phonegap-ember-starterkit">Ember Starter Kit for PhoneGap</a>
+					</li>
+					<li>
+						<a href="https://github.com/thecodejack/">....</a>
+					</li>
+			    </ul>
+			    <p><a href="resume.html">resume</a> Follow the link for my technical abilities</p>
+                <p>Follow my <a href="http://blog.adisrikanth.com">blog</a> to know about awesome front end related stuff.</p> 
+        </my-tile>
+        <my-tile name="CONTACT" imageUrl="images/i1.png">
+            <p>If you are in any need of technical expertise or consulting mainly in 
+                    Javascript MV* frameworks like EmberJS, BackboneJS or AngularJS, drop a mail to 
+            <span id="myemail" class="hint--top  hint--info" data-hint="Right click to select" onmousedown="selectText('myemail')">aadisrikanth@gmail.com</span>.</p>
+            <p>I always welcome discussions about football in my free time. Can contact me in any of social web.</p>
+            <br />
+            <ul class="social_icons">
+                <li><a class="fa fa-facebook-square fa-3x" href="http://facebook.com/adisrikanth" target="_blank"></a></li>
+                <li><a class="fa fa-github-square fa-3x" href="http://github.com/thecodejack/" target="_blank"></a></li>
+                <li><a class="fa fa-linkedin-square fa-3x" href="http://www.linkedin.com/profile/view?id=47591058" target="_blank"></a></li>
+            </ul> 
+        </my-tile>
+        <div class="comp_msg row">
+            Currently My Site is not supported in your browser. I have tested my site successfully in Chrome20+, Firefox4+, Safari6+ pc browsers.
+        </div>
+    </div>
+  </body>
+</html>
