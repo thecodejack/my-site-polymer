@@ -3,6 +3,7 @@
   <head>
     <title>Adi Srikanth | Polymer Version of my site</title>
     <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/modernizer.js"></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -61,6 +62,22 @@
         <div class="comp_msg row">
             Currently My Site is not supported in your browser. I have tested my site successfully in Chrome20+, Firefox4+, Safari6+ pc browsers.
         </div>
+        <div class="loading-div">
+            <div class="holder">
+              <div class="bar left"></div>
+              <div class="bar top"></div>
+              <div class="bar right"></div>
+              <div class="bar bottom"></div>
+              <div class="text">Loading..</div>
+            </div>
+        </div>
     </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(window).load(function(e){
+            $('.loading-div').fadeOut(1000);
+            setTimeout(function(){$('.tile').removeClass('click');}, 200);
+        });
+    </script>
   </body>
 </html>
